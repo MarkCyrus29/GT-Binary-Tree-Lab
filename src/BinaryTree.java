@@ -54,9 +54,9 @@ public class BinaryTree {
       return;
     }
 
-    traversePreOrderRecursive(node.left);
+    traverseInOrderRecursive(node.left);
     System.out.print(node.data + " -> ");
-    traversePreOrderRecursive(node.right);
+    traverseInOrderRecursive(node.right);
   }
 
   private void traversePostOrderRecursive(Node node) {
@@ -64,8 +64,8 @@ public class BinaryTree {
       return;
     }
 
-    traversePreOrderRecursive(node.left);
-    traversePreOrderRecursive(node.right);
+    traversePostOrderRecursive(node.left);
+    traversePostOrderRecursive(node.right);
     System.out.print(node.data + " -> ");
   }
 }
