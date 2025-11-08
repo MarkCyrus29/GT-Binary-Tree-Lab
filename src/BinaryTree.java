@@ -25,7 +25,7 @@ public class BinaryTree {
   }
 
   public void traversePostOrder(){
-    System.out.println("\n--- Post-Order Traversal (Left -> Root -> Right) ---");
+    System.out.println("\n--- Post-Order Traversal (Left -> Right -> Root) ---");
     traversePostOrderRecursive(root);
     System.out.println();
   }
